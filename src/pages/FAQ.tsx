@@ -5,12 +5,16 @@ import { useState } from "react";
 
 const faqs = [
   {
-    q: "What is the application fee for?",
-    a: "The application fee helps us maintain quality job postings and verify serious applicants. It covers CV screening and employer matching services.",
+    q: "What services do you offer?",
+    a: "TEPHCOM HR SOLUTIONS offers career opportunities, resume writing, and document verification services.",
   },
   {
-    q: "How does M-Pesa payment work?",
-    a: "After filling your application, enter your M-Pesa phone number. You'll receive an STK Push prompt on your phone — enter your PIN to pay. Once payment is confirmed, your application is submitted automatically.",
+    q: "What are your service fees?",
+    a: "Job application fee is KES 500, document verification is KES 200 per document, and resume writing is KES 200.",
+  },
+  {
+    q: "How does payment work?",
+    a: "Before submitting any service request, enter your M-Pesa phone number and complete the STK Push prompt on your phone.",
   },
   {
     q: "What if my payment fails?",
@@ -40,7 +44,7 @@ const FAQ = () => {
       <div className="bg-primary py-12">
         <div className="container">
           <h1 className="font-display text-3xl font-bold text-primary-foreground">Frequently Asked Questions</h1>
-          <p className="mt-1 text-primary-foreground/60">Everything you need to know about applying and paying</p>
+          <p className="mt-1 text-primary-foreground/60">Everything you need to know about our HR services and payments</p>
         </div>
       </div>
 
@@ -67,7 +71,7 @@ const FAQ = () => {
         <div className="mt-12 rounded-xl border bg-accent/10 p-8 text-center">
           <h2 className="font-display text-xl font-semibold">Still have questions?</h2>
           <p className="mt-2 text-sm text-muted-foreground">Reach out to our support team</p>
-          <a href="mailto:support@ajiraconnect.co.ke" className="mt-4 inline-block rounded-lg bg-gradient-gold px-6 py-3 font-display font-semibold text-primary shadow-gold">
+          <a href="/contact" className="mt-4 inline-block rounded-lg bg-gradient-gold px-6 py-3 font-display font-semibold text-primary shadow-gold">
             Contact Support
           </a>
         </div>

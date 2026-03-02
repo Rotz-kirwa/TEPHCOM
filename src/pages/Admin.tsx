@@ -3,6 +3,9 @@ import { BarChart3, Briefcase, Users, CreditCard, Settings, LogOut, Plus, Downlo
 import { SAMPLE_JOBS } from "@/data/mockData";
 import { Link } from "react-router-dom";
 
+const LOGO_URL =
+  "https://www.dropbox.com/scl/fi/713p3qs8nexichyfjw8b5/TEPH.jpeg?rlkey=yny7dssjx4apils4b7359ocom&st=hsdhzxmq&raw=1";
+
 type AdminTab = "dashboard" | "jobs" | "applications" | "payments" | "settings";
 
 const mockApplications = [
@@ -21,11 +24,13 @@ const Admin = () => {
       <div className="flex min-h-screen items-center justify-center bg-muted/50">
         <div className="w-full max-w-sm rounded-xl border bg-card p-8 shadow-medium">
           <div className="text-center">
-            <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-gold">
-              <Briefcase className="h-6 w-6 text-primary-foreground" />
-            </div>
+            <img
+              src={LOGO_URL}
+              alt="TEPHCOM HR SOLUTIONS logo"
+              className="mx-auto h-16 w-24 rounded-md bg-white p-1 object-contain"
+            />
             <h1 className="mt-4 font-display text-2xl font-bold">Admin Login</h1>
-            <p className="mt-1 text-sm text-muted-foreground">AjiraConnect Admin Portal</p>
+            <p className="mt-1 text-sm text-muted-foreground">TEPHCOM HR Admin Portal</p>
           </div>
           <div className="mt-6 space-y-4">
             <div>
@@ -35,7 +40,7 @@ const Admin = () => {
                 type="email"
                 value={loginForm.email}
                 onChange={(e) => setLoginForm({ ...loginForm, email: e.target.value })}
-                placeholder="admin@ajiraconnect.co.ke"
+                placeholder="admin@tephcomhr.com"
               />
             </div>
             <div>
@@ -74,8 +79,12 @@ const Admin = () => {
       {/* Sidebar */}
       <aside className="w-64 border-r bg-sidebar p-4">
         <div className="flex items-center gap-2 px-2 font-display text-lg font-bold text-sidebar-foreground">
-          <Briefcase className="h-5 w-5 text-sidebar-primary" />
-          AjiraConnect
+          <img
+            src={LOGO_URL}
+            alt="TEPHCOM HR SOLUTIONS logo"
+            className="h-8 w-12 rounded bg-white p-1 object-contain"
+          />
+          TEPHCOM HR
         </div>
         <nav className="mt-6 space-y-1">
           {navItems.map((item) => (

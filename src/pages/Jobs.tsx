@@ -33,7 +33,7 @@ const Jobs = () => {
       <div className="bg-primary py-12">
         <div className="container">
           <h1 className="font-display text-3xl font-bold text-primary-foreground">Browse Jobs</h1>
-          <p className="mt-1 text-primary-foreground/60">Find verified opportunities across Kenya</p>
+          <p className="mt-1 text-primary-foreground/60">Find verified opportunities across the world</p>
           <div className="mt-6 flex gap-2">
             <div className="relative flex-1">
               <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
